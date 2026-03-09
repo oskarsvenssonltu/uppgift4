@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Sidans titel -->
+	<title>Bli medlem</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<!-- Sidans header -->
+<header class="site-header">
+
+	<!-- Navigations baren -->
+  <nav class="navbar">
+
+  	<!-- Körens logga. Klickbar - leder till startsidan. -->
+    <!-- Loggan är genererad med AI -->
+    <a href="index.html" class="logo">
+  <img src="bilder/logo.png" alt="Falukören">
+</a>
+
+    <!-- UL list för menyvalen -->
+    <ul class="menu">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="om_oss.html">Om oss</a></li>
+      <li><a href="konserter.html">Konserter</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+      <li><a href="medlem.html">Medlem</a></li>
+      <li><a href="bli_medlem.html" class="active">Bli medlem</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Div för headerbilden. Sjävla bilden och design ligger i CSS -->
+<div class="header-bild">
+</div>
+
+<!-- Main-klass för innehåll -->
+  <main>
+
+    <h1>Bli medlem</h1>
+    <p>Vad roligt att du är intresserad av att bli medlem i Falukören! Fyll i formuläret nedan så kontaktar vi dig.</p>
+
+    <!-- Formläret börjar -->
+    <!-- action används när/om fomrläret skickas -->
+  <form action="bli_medlem_skickad.html">
+
+        <!-- Textruta för namn -->
+    <div>
+        <label for="namn">Ditt namn:</label>
+        <input type="text" id="namn" name="namn">
+    </div>
+
+        <!-- Textruta för telefon -->
+    <div> 
+        <label for="telefon">Telefon:</label>
+        <input 
+          type="text" 
+          id="telefon" 
+          name="telefon" 
+        >
+    </div>  
+
+    <!-- Textruta för epost, validerar att det är en giltig e-postadress via type email -->
+    <div> 
+        <label for="epost">E-post:</label>
+        <input type="email" id="epost" name="epost">
+    </div>
+
+            <!-- Textfält för rubrik -->
+    <div>
+        <label for="beskrivning">Meddelande</label>
+          <textarea 
+          id="beskrivning" 
+          name="beskrivning" 
+          rows="8" 
+          cols="30"
+          ></textarea>
+    </div>
+
+        <!-- Submit och reset knapp -->
+    <div class="knappar">
+        <input type="reset" value="Reset">
+        <input type="submit" name="skicka" value="Submit">
+    </div>
+
+  </form>
+
+</main>
+
+         <!-- Länk till javascript -->
+  	<script src="javascript.js"></script>
+
+      <!-- Footer -->
+  <footer>
+    <div>
+    <strong>Kontakt</strong>
+    <p>Falukören</p>
+    <p>Falukörenvägen 1</p>
+    <p>falukören@gmail.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>

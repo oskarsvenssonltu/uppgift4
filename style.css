@@ -1,0 +1,380 @@
+/* Border box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Font och lineheight */
+
+body { 
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+/* Sätter bredden på main till 800px */
+
+main {
+   max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+main h2, h3, h4, h5 {
+  margin-top: 32px;
+  margin-bottom: 6px;
+}
+
+main p {
+  margin-bottom: 16px;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 16px;
+}
+
+main a {
+    color: inherit;
+}
+
+footer {
+  border-top: 1px solid rgba(0,0,0,0.20);
+  padding: 32px 0;
+}
+
+footer div {
+  max-width: 800px;
+  margin: 10px auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5rem 3rem;
+  color: white;
+
+  width: 100%;
+
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: background-color 0.3s ease;
+
+}
+
+/* Navbar när man scrollat */
+.navbar.scrolled {
+  background: black;
+  padding: 1.1rem 3rem;
+}
+
+.navbar.scrolled .logo img {
+  height: 30px;
+}
+
+/* Loggan i navbaren */
+.logo img {
+  height: 50px;       
+  width: auto;
+  display: block;
+
+
+  transition: height 0.3s ease;
+}
+
+/* Meny */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  color: inherit;
+  text-decoration: none;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.menu a.active {
+  /*color: #B87333;*/
+  color: #A5662B;
+}
+
+/* Header bild */
+/* Bilden är en Adobe Stock bild */
+.header-bild {
+  min-height: 60vh;
+  max-height: 80vh;
+  background-image: url("bilder/bild_6.jpg");
+  background-size: cover;
+  background-position: center 25%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  text-align: center;
+}
+
+/* Medlem och sidomeny */
+
+.medlem-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+.sidomeny {
+  width: 180px;
+  border-right: 1px solid rgba(0,0,0,0.15);
+  padding-right: 1.5rem;
+}
+
+.medlem-innehall {
+  flex: 1;
+}
+
+.sidomeny a {
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 0,88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidomeny ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidomeny a.active {
+  color: #A5662B;
+  font-weight: 600;
+}
+
+/* Galleri */
+
+.galleri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.galleri img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.galleri img:hover {
+  opacity: 0.8;
+}
+
+/* Konserter och kontakt */
+
+.konsert, .kontakt {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.konsert img {
+  width: 240px;
+  height: auto;
+}
+
+.kontakt img {
+  width: 210px;
+  height: auto;
+}
+
+.konsert-text, h2 {
+  margin-bottom: 0px;
+} 
+
+.kontakt-text h2 {
+  margin-bottom: 0px;
+  font-size: 1.2rem;
+} 
+
+.kontakt p {
+  margin-bottom: 0px;
+}
+
+.kontakt .titel {
+  margin-bottom: 14px;
+}
+
+/* Notmaterial */
+
+.notlista {
+  list-style: none;
+  padding: 0;
+}
+
+.notlista li {
+  margin-bottom: 8px;
+}
+
+/* Repetitionstider - tabell */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  border-bottom: 2px solid black;
+}
+
+td {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+
+/* Formuläret (CSS från föregående uppgift)*/
+/* Sätter bakgrundsfärg, font mm. Väljer display grid som ersätter <br> i första uppgiften */
+/* Design för själva formläret som agerar som en "box" */
+
+form {
+  background-color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 6px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 32px;
+
+}
+
+/* Mellanrum mellan div-arna */
+  form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+/* Sista div ska inte ha marginal under */
+form > div:last-child {
+  margin-bottom: 0;
+}
+
+/* Marginal för "rubrikerna" (label) */
+  form label {
+    margin-bottom: 2px;
+  }
+
+/* Design av input text och email, select och textarea. Större än standard. */
+ form input[type="text"], form input[type="email"], form select, form textarea {
+  width: 100%;
+  padding: 4px 8px;
+  box-sizing: border-box;
+}
+
+/* Design av submit och reset. Jag lägger väljer att använda flex-direction row för att få de på samma rad. */
+.knappar {
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.knappar input {
+  padding: 10px 16px;
+  font-family: inherit;
+  font-size: 15px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Sätter bakgrundsfärgen till "brons" för att matcha textfärgen till den aktiva sidan i menyn */
+.knappar input[type="submit"] {
+  background-color: #A5662B;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Hovereffekt */
+.knappar input[type="submit"]:hover {
+  background-color: #bf7632;
+}
+
+/* Sätter bakgrundsfärgen till "ljusgrå" för att skilja den från den mer inbjudande submit knappen */
+.knappar input[type="reset"] {
+  background-color: #ebedf2;
+  color: #374151;
+}
+
+/* Hovereffekt */
+.knappar input[type="reset"]:hover {
+  background-color: #e4e6eb;
+}
+
+/* Mobilanpassning */
+
+@media (max-width: 600px) {
+
+  .konsert {
+    flex-direction: column;
+  }
+
+  .galleri {
+    grid-template-columns: 1fr;
+  }
+
+  .kontakt {
+    flex-direction: column;
+  }
+
+  .medlem-layout {
+    flex-direction: column;
+  }
+
+   .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 20px;
+  }
+
+}
+
