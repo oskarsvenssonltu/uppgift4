@@ -124,11 +124,11 @@ footer div {
 /* Header bild */
 /* Bilden är en Adobe Stock bild */
 .header-bild {
-  min-height: 60vh;
+  min-height: 55vh;
   max-height: 80vh;
   background-image: url("bilder/bild_6.jpg");
   background-size: cover;
-  background-position: center 25%;
+  background-position: center 23%;
 
   display: flex;
   align-items: center;
